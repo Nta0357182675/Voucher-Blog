@@ -1,89 +1,129 @@
-
-.single-player{
-    background-color: aquamarine;
-    width: 100%;
-    height: 320px;
-    margin-bottom: 1em;
-    display: flex;
+/* 🔹 Container chính của slider */
+.single-player {
+    width         : 100%;
+    height        : auto;
+    margin-bottom : 1.5em;
+    display       : flex;
     flex-direction: column;
-    gap: 0.5em
-}
-.single-player h3 {
-    background-color: aqua;
-    width: 100%;
-    height: 30px;
-}
-.single-player ul {
-    width: fit-content;
-    height: 290px;
-    background-color: blanchedalmond;
-    display: flex;
-    gap: 3em;
-    list-style-type: none;
-    padding: 0px 1em 0px 1em;
-}
-.single-player ul li {
-    width: 230px;
-    height: 100%;
-    background-color: aqua;
- }
- .single-player ul li .imgName{
-    width: 100%;
-    height: 75%;
-    background-color: greenyellow;
- }
- .single-player ul li .imgName img{
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-    object-fit: cover;
- }
- .single-player ul li .info {
-    width: 100%;
-    height: 25%;
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
- .single-player ul li .info h4 {
-    width: 100%;
-    height: 40%;
-    background-color: chocolate;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
- }
- .button {
-    display: flex;
-    justify-content: space-evenly;
+    position      : relative;
     background-color: chartreuse;
-    width: 100%;
-    height: 60%;
-    align-items: center;
- }
- .button button{
-    width: 100px;
-    height: 32px;
-    border-radius: 15px;
-    border: 1px solid #9654F4;
+}
+
+/* 🔹 Tiêu đề */
+.single-player h2 {
+    width         : 100%;
+    font-size     : 1.5em;
+    font-weight   : bold;
+    position      : relative;
+    height: 30px;
+    background-color: aquamarine;
+}
+
+
+/* 🔹 Danh sách game <ul> */
+.single-player ul {
+    width           : 100%;
+    height          : auto;
+    display         : flex;
+    gap             : 1em; /* Giảm khoảng cách giữa các game */
+    list-style-type : none;
+    justify-content : center;
+    padding: 1em;
     
- }
- .button .play {
+}
+
+/* 🔹 Mỗi game trong danh sách */
+.single-player ul li {
+    width           : 230px;
+    height          : 320px;
+    background-color: white;
+    border-radius   : 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+
+
+}
+/* 🔹 Ảnh game */
+.single-player ul li .imgName {
+    width        : 100%;
+    height       : 75%;
+    border-radius: 10px;
+
+}
+
+.single-player ul li .imgName img {
+    width        : 100%;
+    height       : 100%;
+    object-fit   : cover;
+    border-radius: 10px;
+}
+
+/* 🔹 Thông tin game */
+.single-player ul li .info {
+    width          : 100%;
+    height         : 25%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    text-align     : center;
+}
+
+/* 🔹 Tên game */
+.single-player ul li .info h4 {
+    font-size   : 1.2em;
+    font-weight : bold;
+    color       : #333;
+    margin      : 5px 0;
+}
+.button {
+    display        : flex;
+    justify-content: space-evenly;
+    width          : 100%;
+    height         : 60%;
+    align-items    : center;
+}
+
+.button button {
+    width        : 100px;
+    height       : 32px;
+    border-radius: 15px;
+    border       : 1px solid #9654F4;
+
+}
+
+.button .play {
     color: #9654F4;
- }
- .button .play:hover {
+}
+
+.button .play:hover {
     background-color: rgba(255, 255, 255, 0.9);
-    color: darkviolet;
-    border-color: darkviolet;
-    box-shadow: 0px 4px 10px rgba(138, 43, 226, 0.3);
-  }
- .button .design {
-    color: white;
+    color           : darkviolet;
+    border-color    : darkviolet;
+    box-shadow      : 0px 4px 10px rgba(138, 43, 226, 0.3);
+    cursor          : pointer;
+}
+
+.button .design {
+    color           : white;
     background-color: #9654F4;
- }
- .button .design:hover {
+}
+
+.button .design:hover {
     background-color: darkviolet;
-    box-shadow: 0px 4px 15px rgba(138, 43, 226, 0.6);
-    cursor: pointer;
-  }
+    box-shadow      : 0px 4px 15px rgba(138, 43, 226, 0.6);
+    cursor          : pointer;
+}
+
+/* 🔹 Mũi tên Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #6a0dad; /* Màu tím */
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Khi hover, mũi tên đậm hơn */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #9654F4;
+    transform: scale(1.2);
+}

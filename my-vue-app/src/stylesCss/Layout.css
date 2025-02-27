@@ -29,7 +29,7 @@
 .content {
   flex: 1;
   padding: 2em;
-  background: white;
+  background: #EFE6FD;
   overflow-y: auto;
   margin-left: 250px; /* Để tránh bị sidebar che */
 }
