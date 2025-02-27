@@ -1,0 +1,89 @@
+
+.single-player{
+    background-color: aquamarine;
+    width: 100%;
+    height: 320px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em
+}
+.single-player h3 {
+    background-color: aqua;
+    width: 100%;
+    height: 30px;
+}
+.single-player ul {
+    width: fit-content;
+    height: 290px;
+    background-color: blanchedalmond;
+    display: flex;
+    gap: 3em;
+    list-style-type: none;
+    padding: 0px 1em 0px 1em;
+}
+.single-player ul li {
+    width: 230px;
+    height: 100%;
+    background-color: aqua;
+ }
+ .single-player ul li .imgName{
+    width: 100%;
+    height: 75%;
+    background-color: greenyellow;
+ }
+ .single-player ul li .imgName img{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    object-fit: cover;
+ }
+ .single-player ul li .info {
+    width: 100%;
+    height: 25%;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .single-player ul li .info h4 {
+    width: 100%;
+    height: 40%;
+    background-color: chocolate;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+ }
+ .button {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: chartreuse;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+ }
+ .button button{
+    width: 100px;
+    height: 32px;
+    border-radius: 15px;
+    border: 1px solid #9654F4;
+    
+ }
+ .button .play {
+    color: #9654F4;
+ }
+ .button .play:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: darkviolet;
+    border-color: darkviolet;
+    box-shadow: 0px 4px 10px rgba(138, 43, 226, 0.3);
+  }
+ .button .design {
+    color: white;
+    background-color: #9654F4;
+ }
+ .button .design:hover {
+    background-color: darkviolet;
+    box-shadow: 0px 4px 15px rgba(138, 43, 226, 0.6);
+    cursor: pointer;
+  }

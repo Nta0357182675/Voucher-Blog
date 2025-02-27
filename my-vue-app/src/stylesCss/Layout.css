@@ -1,0 +1,53 @@
+/* 🏗 Tổng thể layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Đảm bảo layout có thể mở rộng theo nội dung */
+}
+
+/* 🏗 Main container gồm Sidebar & Content */
+.main-container {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Để tránh bị header che */
+  min-height: calc(100vh - 60px); /* Đảm bảo nội dung có thể cuộn nếu dài */
+}
+
+/* 📌 Sidebar bên trái */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 60px; /* Tránh bị header che */
+  bottom: 0;
+  overflow-y: auto;
+}
+
+/* 🔹 Content chính bên phải */
+.content {
+  flex: 1;
+  padding: 2em;
+  background: white;
+  overflow-y: auto;
+  margin-left: 250px; /* Để tránh bị sidebar che */
+}
+
+/* 📱 **RESPONSIVE CHO MOBILE** */
+/* @media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+} */

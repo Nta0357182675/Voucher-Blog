@@ -1,0 +1,86 @@
+/* 📌 Sidebar cố định */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px 0px 20px 5px; 
+    position: fixed;
+    left: 0;
+    top: 60px; /* Tránh bị Header che */
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🏷️ Danh sách các mục trong Sidebar */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* ✅ Tạo khoảng cách đều giữa các mục */
+  }
+  
+  /* 📌 Các mục trong Sidebar */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+
+  }
+
+  
+  
+  /* 🎨 Hover Sidebar - đổi màu nền & chữ */
+  .sidebar-item:hover {
+    background: #e6e6e6;
+    transform: scale(1.05); /* Hiệu ứng scale nhẹ khi hover */
+  }
+  
+  
+  /* 🖤 Icon trắng đen */
+  .sidebar-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* 🎨 Khi hover, icon có màu gốc & scale nhẹ */
+  .sidebar-item:hover .sidebar-icon {
+    filter: grayscale(0%);
+    transform: rotate(5deg);
+  }
+  
+.active {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #e6e6e6;
+  filter: grayscale(0%);
+  background-color: #9654F4;
+}
+.active .sidebar-icon{
+  filter: grayscale(0%);
+}
+  /* 📱 **RESPONSIVE CHO MOBILE** */
+  /* @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar ul {
+      gap: 5px; 
+    }
+  } */
+  
