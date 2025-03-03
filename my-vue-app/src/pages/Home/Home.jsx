@@ -13,7 +13,7 @@ const Home = () => {
   // Gọi API lấy dữ liệu game
   const handleApi = async () => {
     try {
-      const handleRes = await (await fetch("http://localhost:3001/games")).json();
+      const handleRes = await (await fetch("http://localhost:3000/games")).json();
       setListSingleGame(handleRes);
     } catch (error) {
       console.log(`error: ${error}`);
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       <div className="game single-player">
-        <h2>Game 1 người chơi</h2>
+        <h2>Game đơn</h2>
 
         {/* Bọc danh sách game trong <ul> */}
         <ul className="game-list">
@@ -40,7 +40,7 @@ const Home = () => {
             // pagination={{ clickable: true }} // Hiển thị chấm trượt
           >
             {listSingleGame.map((game) => (
-              <SwiperSlide key={game.id}>
+              <SwiperSlide key={game.id} className="SwiperSlide">
                 <li className="boxgame">
                   <div className="imgName">
                     <img src={game.image} alt={game.name} />
