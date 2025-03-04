@@ -1,20 +1,20 @@
 /* 🔹 Container chính của slider */
 .single-player {
-    width         : 100%;
-    height        : 426px;
-    display       : flex;
-    flex-direction: column;
-    position      : relative;
-    /* background-color: chartreuse; */
+    width           : 100%;
+    height          : 426px;
+    display         : flex;
+    flex-direction  : column;
+    position        : relative;
+    background-color: chartreuse;
 }
 
 /* 🔹 Tiêu đề */
 .single-player h2 {
-    width         : 100%;
-    font-size     : 1.5em;
-    font-weight   : bold;
-    position      : relative;
-    height: 30px;
+    width              : 100%;
+    font-size          : 1.5em;
+    font-weight        : bold;
+    position           : relative;
+    height             : 30px;
     /* background-color: aquamarine; */
 }
 
@@ -24,33 +24,35 @@
     width           : 100%;
     height          : 370px;
     display         : flex;
-    gap             : 28px; /* Giảm khoảng cách giữa các game */
+    gap             : 28px;
+    /* Giảm khoảng cách giữa các game */
     list-style-type : none;
     justify-content : center;
-    padding: 0em 1em 0em 1em;
-    /* background-color: brown; */
-    
-}
-.SwiperSlide {
-    width: 230px;
-    height: 100%;
-    /* background-color: thistle; */
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+    padding         : 0em 1em 0em 1em;
+    background-color: brown;
 
 }
+
+.SwiperSlide {
+    width           : 230px;
+    height          : 100%;
+    background-color: thistle;
+    display         : flex;
+    padding         : 10px;
+    justify-content : center;
+    align-items     : center;
+
+}
+
 /* 🔹 Mỗi game trong danh sách */
 .single-player ul li {
     width           : 100%;
     height          : 100%;
     background-color: white;
     border-radius   : 10px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5)
-
-
+    box-shadow      : 0px 0px 4px 0px rgba(0, 0, 0, 0.5)
 }
+
 /* 🔹 Ảnh game */
 .single-player ul li .imgName {
     width        : 100%;
@@ -78,12 +80,13 @@
 
 /* 🔹 Tên game */
 .single-player ul li .info h4 {
-    font-size   : 1.2em;
-    font-weight : bold;
-    color       : #333;
-    margin      : 5px 0;
+    font-size  : 1.2em;
+    font-weight: bold;
+    color      : #333;
+    margin     : 5px 0;
 }
-.button {
+
+.single-player ul li .info .button {
     display        : flex;
     justify-content: space-evenly;
     width          : 100%;
@@ -91,7 +94,7 @@
     align-items    : center;
 }
 
-.button button {
+.single-player ul li .info .button button {
     width        : 100px;
     height       : 32px;
     border-radius: 15px;
@@ -99,11 +102,11 @@
 
 }
 
-.button .play {
+.single-player ul li .info .button .play {
     color: #9654F4;
 }
 
-.button .play:hover {
+.single-player ul li .info .button .play:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color           : darkviolet;
     border-color    : darkviolet;
@@ -111,12 +114,12 @@
     cursor          : pointer;
 }
 
-.button .design {
+.single-player ul li .info .button .design {
     color           : white;
     background-color: #9654F4;
 }
 
-.button .design:hover {
+.single-player ul li .info .button .design:hover {
     background-color: darkviolet;
     box-shadow      : 0px 4px 15px rgba(138, 43, 226, 0.6);
     cursor          : pointer;
@@ -125,16 +128,228 @@
 /* 🔹 Mũi tên Swiper */
 .swiper-button-prev,
 .swiper-button-next {
-    color: #6a0dad; /* Màu tím */
-    font-size: 28px;
-    transition: all 0.3s ease-in-out;
+    color           : #6a0dad;
+    /* Màu tím */
+    font-size       : 28px;
+    transition      : all 0.3s ease-in-out;
     background-color: #EFE6FD;
-    border-radius: 5px;
+    border-radius   : 5px;
 }
 
 /* 🔹 Khi hover, mũi tên đậm hơn */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    color: #9654F4;
+    color    : #9654F4;
     transform: scale(1.2);
+}
+
+
+
+
+.Love {
+    width           : 100%;
+    height          : 830px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    background-color: aquamarine;
+
+}
+
+.Love h2 {
+    width           : 100%;
+    font-size       : 1.5em;
+    font-weight     : bold;
+    position        : relative;
+    height          : 30px;
+    background-color: pink;
+}
+
+.Love .Game-Content {
+    width           : 100%;
+    height          : 774px;
+    background-color: tomato;
+    display         : flex;
+}
+
+.Game-Content .favorite {
+    width           : 50%;
+    height          : 740px;
+    background-color: yellow;
+    padding         : 10px 26px 10px 26px;
+    position        : relative;
+
+}
+
+.Game-Content .favorite .imgName {
+    width : 100%;
+    height: 100%;
+    ;
+    border-radius   : 10px;
+    background-color: royalblue;
+
+
+}
+
+.Game-Content .favorite .imgName img {
+    width        : 100%;
+    height       : 100%;
+    object-fit   : cover;
+    border-radius: 10px;
+}
+
+.Game-Content .favorite .info {
+    width           : 454px;
+    height          : 148px;
+    background-color: none;
+    position        : absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch chuyển lại 50% chiều rộng và chiều cao */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.Game-Content .favorite .info h1 {
+    color: white
+}
+.Game-Content .favorite .info .button {
+    width: 100%;
+    height: 30%;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+}
+.Game-Content .favorite .info .button button {
+    width        : 48%;
+    height       : 100%;
+    border-radius: 15px;
+    border       : 1px solid #9654F4;
+
+}
+
+.Game-Content .favorite .info .button .play {
+    color: white;
+    background-color: transparent; /* Làm nền trong suốt */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* Tạo hiệu ứng phát sáng nhẹ */
+}
+
+.Game-Content .favorite .info .button .play:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color           : darkviolet;
+    border-color    : darkviolet;
+    box-shadow      : 0px 4px 10px rgba(138, 43, 226, 0.3);
+    cursor          : pointer;
+}
+
+.Game-Content .favorite .info .button .design {
+    color           : white;
+    background-color: #9654F4;
+}
+
+.Game-Content .favorite .info .button .design:hover {
+    background-color: darkviolet;
+    box-shadow      : 0px 4px 15px rgba(138, 43, 226, 0.6);
+    cursor          : pointer;
+}
+.Game-Content .game-top {
+    width           : 50%;
+    height          : 100%;
+    display         : flex;
+    flex-direction  : column;
+    background-color: violet;
+    /* gap          : 24px; */
+}
+
+.game-top ul {
+    width           : 100%;
+    height          : 370px;
+    background-color: seagreen;
+    padding         : 10px 26px 10px 26px;
+    display         : flex;
+    gap             : 28px;
+    /* Giảm khoảng cách giữa các game */
+    list-style-type : none;
+    justify-content : center;
+}
+
+.game-top ul li {
+    width           : 262px;
+    height          : 100%;
+    background-color: white;
+    border-radius   : 10px;
+    box-shadow      : 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.game-top ul li .imgName {
+    width        : 100%;
+    height       : 75%;
+    border-radius: 10px;
+}
+
+.game-top ul li .imgName img {
+    width        : 100%;
+    height       : 100%;
+    object-fit   : cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.game-top ul li .info {
+    width          : 100%;
+    height         : 25%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    text-align     : center;
+
+}
+
+/* 🔹 Tên game */
+.game-top ul li .info h4 {
+    font-size  : 1.2em;
+    font-weight: bold;
+    color      : #333;
+    margin     : 5px 0;
+}
+
+.game-top ul li .info .button {
+    display        : flex;
+    justify-content: space-evenly;
+    width          : 100%;
+    height         : 60%;
+    align-items    : center;
+}
+
+.game-top ul li .info .button button {
+    width        : 100px;
+    height       : 32px;
+    border-radius: 15px;
+    border       : 1px solid #9654F4;
+
+}
+
+.game-top ul li .info .button .play {
+    color: #9654F4;
+}
+
+.game-top ul li .info .button .play:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color           : darkviolet;
+    border-color    : darkviolet;
+    box-shadow      : 0px 4px 10px rgba(138, 43, 226, 0.3);
+    cursor          : pointer;
+}
+
+.game-top ul li .info .button .design {
+    color           : white;
+    background-color: #9654F4;
+}
+
+.game-top ul li .info .button .design:hover {
+    background-color: darkviolet;
+    box-shadow      : 0px 4px 15px rgba(138, 43, 226, 0.6);
+    cursor          : pointer;
 }
